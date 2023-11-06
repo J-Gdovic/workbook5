@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat sapiente voluptate, itaque dolore
+          repellendus excepturi officia numquam dolores nobis laboriosam perspiciatis veritatis, maxime deserunt quasi
+          aspernatur aut ipsam odit inventore.
+        </p>
+        <button id="openButton"></button>
+      </section>
+    </main>
+    <script>
+              const openButton = document.getElementById("openButton")
+              //function changes background color after 3 seconds
+              function changeBackground(){
+                  document.body.style.backgroundColor = "yellow";
+              }
+              setTimeout(changeBackground, 3000)
+
+              console.log(window.document.location.hostname);
+              console.log(navigator.userAgent);
+
+      function openPage();{
+          window.open("https://www.yearup.org/")
+      }
+
+              openButton.onclick = openPage;
+    </script>
+  </body>
+</html>
