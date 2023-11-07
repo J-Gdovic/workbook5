@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic Images</title>
-    <link rel="stylesheet" href="css/syles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+    <link rel="stylesheet" href="css/syles.css" />
+  </head>
+  <body>
     <main>
-        <form action="">
-        <label for=""></label>
-<select name="" id="selectImageList">
-<option value="">Select...</option>
-</select>
+      <form action="">
+        <label for="imageList"></label>
+        <select name="" id="imageList">
+          <option value="">Select...</option>
+        </select>
 
-<button id="addImageButton">Add</button>
-<button id="clearImageButton">Clear</button>
-</form>
-<div id="imagesDiv">
-    
+        <button id="addImageButton">Add</button>
+        <button id="clearImageButton">Clear</button>
+      </form>
+      <div id="imagesDiv">
+<!-- <img src="https://placehold.co/300x300" alt="placeholder"> -->
 
-</div>
-</main>
+      </div>
+    </main>
 
     <script src="scripts/dynamicImages.js"></script>
-</body>
+  </body>
 </html>
