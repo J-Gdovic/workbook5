@@ -28,14 +28,17 @@ function loadImageList() {
     for (const imageFile of imageFiles) {
         // baby step console.log(imageFile);
         const option = document.createElement("option");
-        option.value = imageFile.path;
+        option.value = imageFile.id;
         option.innerText = imageFile.description;
         imageList.appendChild(option);
     }
 }
 
-function addImageButtonOnClick() {
-    
+function addImage() {
+  // baby step to make sure function is working in the console  console.log("working");
+  
+
 }
 
 loadImageList();
+addImageButton.onclick = addImage;
