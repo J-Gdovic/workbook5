@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/mystyles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee and Projects</title>
+    <link rel="stylesheet" href="css/mystyles.css" />
+    <link href="https://unpkg.com/bonsai.css@latest/dist/bonsai.min.css" rel="stylesheet" />
+  </head>
+  <body>
     <main>
-        
+      <form>
+        <label for="employeeList">List of Employees</label>
+        <select id="employeeList">
+          <option value="">Select...</option>
+        </select>
+      </form>
+
+      <table id="employeeDataTable">
+        <thead>
+          <tr id=" employeeTableDataRow">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Job Title</th>
+            <th>Years at Company</th>
+            <th>Email</th>
+            <th>wfhAdress</th>
+            <th>Skill Set</th>
+          </tr>
+        </thead>
+
+        <tbody id="employeeDataTableBody"></tbody>
+      </table>
+      <div id="employeeDataTableDiv"></div>
     </main>
-</body>
-<script src="scripts/employees.js"></script>
+  </body>
+  <script src="scripts/employees.js"></script>
 </html>

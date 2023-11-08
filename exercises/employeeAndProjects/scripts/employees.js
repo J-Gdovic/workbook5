@@ -10,9 +10,9 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 112,
-        name: "Cupidatat aute"
-      }
-    ]
+        name: "Cupidatat aute",
+      },
+    ],
   },
   {
     id: "23810",
@@ -25,9 +25,9 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 124,
-        name: "Amet do deserunttate aliqua"
-      }
-    ]
+        name: "Amet do deserunttate aliqua",
+      },
+    ],
   },
   {
     id: "52797",
@@ -40,13 +40,13 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 131,
-        name: "Ut minim anim"
+        name: "Ut minim anim",
       },
       {
         projectId: 147,
-        name: "Velit Lorem reprehenderit"
-      }
-    ]
+        name: "Velit Lorem reprehenderit",
+      },
+    ],
   },
   {
     id: "62847",
@@ -59,17 +59,17 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 131,
-        name: "Ut minim anim"
+        name: "Ut minim anim",
       },
       {
         projectId: 133,
-        name: "Est minim labore"
+        name: "Est minim labore",
       },
       {
         projectId: 152,
-        name: "Reprehenderit officia"
-      }
-    ]
+        name: "Reprehenderit officia",
+      },
+    ],
   },
   {
     id: "16642",
@@ -82,17 +82,17 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 131,
-        name: "Ut minim anim"
+        name: "Ut minim anim",
       },
       {
         projectId: 123,
-        name: "Reprehenderit reprehenderit"
+        name: "Reprehenderit reprehenderit",
       },
       {
         projectId: 105,
-        name: "Pariatur eiusmod"
-      }
-    ]
+        name: "Pariatur eiusmod",
+      },
+    ],
   },
   {
     id: "32775",
@@ -105,17 +105,17 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 134,
-        name: "Dolore exercitation veniam"
+        name: "Dolore exercitation veniam",
       },
       {
         projectId: 131,
-        name: "Ut minim anim"
+        name: "Ut minim anim",
       },
       {
         projectId: 107,
-        name: "Ea sint irure do excepteur"
-      }
-    ]
+        name: "Ea sint irure do excepteur",
+      },
+    ],
   },
   {
     id: "76394",
@@ -128,17 +128,17 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 131,
-        name: "Ut minim anim"
+        name: "Ut minim anim",
       },
       {
         projectId: 132,
-        name: "Fugiat amet do cillum do"
+        name: "Fugiat amet do cillum do",
       },
       {
         projectId: 142,
-        name: "Sunt consequat incididunt"
-      }
-    ]
+        name: "Sunt consequat incididunt",
+      },
+    ],
   },
   {
     id: "58889",
@@ -151,9 +151,9 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 113,
-        name: "Magna aute sint"
-      }
-    ]
+        name: "Magna aute sint",
+      },
+    ],
   },
   {
     id: "56701",
@@ -166,13 +166,13 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 101,
-        name: "Commodo exercitation"
+        name: "Commodo exercitation",
       },
       {
         projectId: 131,
-        name: "Mollit magna ad culpa"
-      }
-    ]
+        name: "Mollit magna ad culpa",
+      },
+    ],
   },
   {
     id: "80897",
@@ -185,9 +185,9 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 131,
-        name: "Ut minim anim"
-      }
-    ]
+        name: "Ut minim anim",
+      },
+    ],
   },
   {
     id: "49534",
@@ -200,13 +200,13 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 150,
-        name: "Adipisicing ea"
+        name: "Adipisicing ea",
       },
       {
         projectId: 123,
-        name: "Reprehenderit reprehenderit"
-      }
-    ]
+        name: "Reprehenderit reprehenderit",
+      },
+    ],
   },
   {
     id: "33459",
@@ -219,9 +219,9 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 144,
-        name: "Commodo anim occaecat"
-      }
-    ]
+        name: "Commodo anim occaecat",
+      },
+    ],
   },
   {
     id: "72054",
@@ -234,16 +234,96 @@ let employees = [
     projectsAssignedTo: [
       {
         projectId: 107,
-        name: "Ea sint irure do excepteur"
+        name: "Ea sint irure do excepteur",
       },
       {
         projectId: 112,
-        name: "Consequat non fugiat"
+        name: "Consequat non fugiat",
       },
       {
         projectId: 113,
-        name: "Magna aute sint"
-      }
-    ]
-  }
+        name: "Magna aute sint",
+      },
+    ],
+  },
 ];
+
+//get elements into variables
+const employeeList = document.querySelector("#employeeList");
+const employeeDataTableDiv = document.querySelector("#employeeDataTableDiv");
+const employeeDataTableBody = document.querySelector("#employeeDataTableBody");
+
+//functions
+function loadEmployeeList() {
+  for (const employee of employees) {
+    let option = document.createElement("option");
+    option.value = employee.id;
+    option.innerText = employee.name;
+    employeeList.appendChild(option);
+  }
+}
+
+// function loadEmployeeData() {
+//   const employeeDataTable = document.querySelector("#employeeDataTable");
+//   employeeDataTableBody.innerHTML = "";
+//   for (const employee of employees) {
+//     let tableRow = employeeDataTableBody.insertRow();
+
+//     let tableData1 = tableRow.insertCell();
+//     tableData1.innerText = employee.id;
+
+//     let tableData2 = tableRow.insertCell();
+//     tableData2.innerText = employee.name;
+
+//     let tableData3 = tableRow.insertCell();
+//     tableData3.innerText = employee.jobTitle;
+
+//     let tableData4 = tableRow.insertCell();
+//     tableData4.innerText = employee.yearsAtCompany;
+
+//     let tableData5 = tableRow.insertCell();
+//     tableData5.innerText = employee.email;
+
+//     let tableData6 = tableRow.insertCell();
+//     tableData6.innerText = employee.wfhAddress;
+
+//     let tableData7 = tableRow.insertCell();
+//     tableData7.innerText = employee.skillSet;
+
+//   }
+// }
+
+function addTableRow() {
+  const employeeId = employeeList.value;
+  for (const employee of employees) {
+    if (employee.id == employeeId) {
+      let tableRow = employeeDataTableBody.insertRow();
+
+      let tableData1 = tableRow.insertCell();
+      tableData1.innerText = employee.id;
+
+      let tableData2 = tableRow.insertCell();
+      tableData2.innerText = employee.name;
+
+      let tableData3 = tableRow.insertCell();
+      tableData3.innerText = employee.jobTitle;
+
+      let tableData4 = tableRow.insertCell();
+      tableData4.innerText = employee.yearsAtCompany;
+
+      let tableData5 = tableRow.insertCell();
+      tableData5.innerText = employee.email;
+
+      let tableData6 = tableRow.insertCell();
+      tableData6.innerText = employee.wfhAddress;
+
+      let tableData7 = tableRow.insertCell();
+      tableData7.innerText = employee.skillSet;
+    }
+  }
+}
+
+//wire up
+loadEmployeeList();
+//loadEmployeeData();
+employeeList.onchange = addTableRow;
