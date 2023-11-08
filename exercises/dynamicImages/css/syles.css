@@ -1,4 +1,10 @@
-form{
-    max-width: 20rem;
-    margin: auto;
+form {
+  max-width: 20rem;
+  margin: auto;
+}
+
+#imagesDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

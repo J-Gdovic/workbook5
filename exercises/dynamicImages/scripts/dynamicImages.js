@@ -1,18 +1,18 @@
 "use strict";
 
 let imageFiles = [
-  { id: "1", path: "https://placehold.co/300x300", description: "placeholder 1" },
-  { id: "2", path: "https://placehold.co/300x300", description: "placeholder 2" },
-  { id: "3", path: "https://placehold.co/300x300", description: "placeholder 3" },
-  { id: "4", path: "https://placehold.co/300x300", description: "placeholder 4" },
-  { id: "5", path: "https://placehold.co/300x300", description: "placeholder 5" },
-  { id: "6", path: "https://placehold.co/300x300", description: "placeholder 6" },
-  { id: "7", path: "https://placehold.co/300x300", description: "placeholder 7" },
-  { id: "8", path: "https://placehold.co/300x300", description: "placeholder 8" },
-  { id: "9", path: "https://placehold.co/300x300", description: "placeholder 9" },
-  { id: "10", path: "https://placehold.co/300x300", description: "placeholder 10" },
-  { id: "11", path: "https://placehold.co/300x300", description: "placeholder 11" },
-  { id: "12", path: "https://placehold.co/300x300", description: "placeholder 12" },
+  { id: "1", path: "images/acid-rap-artwork-2.webp", description: "AcidRap" },
+  { id: "2", path: "images/R-13036074-1668509366-9222.jpg", description: "Days Before Rodeo" },
+  { id: "3", path: "images/AtLongLastASAPCover.jpg", description: "At Long Last A.S.A.P" },
+  { id: "4", path: "images/nothingWasTheSame.jpg", description: "Nothing Was The Same" },
+  { id: "5", path: "images/HNDRXX_cover.jpg", description: "HNDRXX" },
+  { id: "6", path: "images/Ready_To_Die.jpg", description: "Ready To Die" },
+  { id: "7", path: "images/graduation.jpg", description: "Graduation" },
+  { id: "8", path: "images/Kid-cudi-indicud-cover.jpg", description: "Indicud" },
+  { id: "9", path: "images/R-439652-1300194970.jpg", description: "The Great Adventures of Slick Rick" },
+  { id: "10", path: "images/beastieBoys.jpg", description: "License to Ill" },
+  { id: "11", path: "images/goodKID.jpg", description: "Good Kid, m.A.A.d city" },
+  { id: "12", path: "images/Magna_Carta_Holy_Grail_cover.png", description: "Magna Carta...Holy Grail" },
 ];
 // get elements into variables
 const imageList = document.querySelector("#imageList");
@@ -53,5 +53,12 @@ function addImage() {
   }
 }
 
+function clearImages(){
+const imagesForm = document.querySelector("#imagesForm");
+
+
+}
+
 loadImageList();
 addImageButton.onclick = addImage;
+clearImageButton.onclick = clearImages;
