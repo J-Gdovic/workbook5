@@ -53,10 +53,8 @@ function addImage() {
   }
 }
 
-function clearImages(){
-const imagesForm = document.querySelector("#imagesForm");
-
-
+function clearImages() {
+  const imagesForm = document.querySelector("#imagesForm");
 }
 
 loadImageList();
