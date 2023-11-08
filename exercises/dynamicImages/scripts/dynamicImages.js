@@ -54,7 +54,7 @@ function addImage() {
 }
 
 function clearImages() {
-  const imagesForm = document.querySelector("#imagesForm");
+  imagesDiv.innerHTML = " ";
 }
 
 loadImageList();
