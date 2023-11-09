@@ -20,17 +20,21 @@ function loadWinningTicketsTable() {
   //console.log(winningTickets);
   for (const winningTicket of winningTickets) {
     //console.log(winningTicket);
-    let tableRow = winningTicketsTableBody.insertRow(-1);
-
-    let tableData1 = tableRow.insertCell(0);
-    tableData1.innerText = winningTicket.tixNum;
-
-    let tableData2 = tableRow.insertCell(1);
-    tableData2.innerText = winningTicket.prize.toLocaleString();
-    
-    let tableData3 = tableRow.insertCell(2);
-    tableData3.innerText = winningTicket.expires;
+ buildTicketRow(winningTicket);
   }
+}
+
+function buildTicketRow(winningTicket) {
+  let tableRow = winningTicketsTableBody.insertRow(-1);
+
+  let tableData1 = tableRow.insertCell(0);
+  tableData1.innerText = winningTicket.tixNum;
+
+  let tableData2 = tableRow.insertCell(1);
+  tableData2.innerText = winningTicket.prize.toLocaleString();
+  
+  let tableData3 = tableRow.insertCell(2);
+  tableData3.innerText = winningTicket.expires;
 }
 // wire up functions to events
 loadWinningTicketsTable();
