@@ -255,6 +255,7 @@ const employeeDataTableBody = document.querySelector("#employeeDataTableBody");
 
 //functions
 function loadEmployeeList() {
+  
   for (const employee of employees) {
     let option = document.createElement("option");
     option.value = employee.id;
@@ -294,7 +295,10 @@ function loadEmployeeList() {
 // }
 
 function addTableRow() {
-  const employeeId = employeeList.value;
+  //refreshes table when chosing different employee
+  employeeDataTableBody.innerHTML = "";
+const employeeId = employeeList.value;
+
   for (const employee of employees) {
     if (employee.id == employeeId) {
       let tableRow = employeeDataTableBody.insertRow();
@@ -319,11 +323,19 @@ function addTableRow() {
 
       let tableData7 = tableRow.insertCell();
       tableData7.innerText = employee.skillSet;
+
+      let tableData8 = tableRow.insertCell();
+      tableData8.innerText = employee.projectsAssignedTo.length;
     }
   }
+}
+
+function changeEmployeeInfo() {
+  employeeDataTableDiv.innerHTML = " ";
 }
 
 //wire up
 loadEmployeeList();
 //loadEmployeeData();
 employeeList.onchange = addTableRow;
+

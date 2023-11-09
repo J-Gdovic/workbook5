@@ -59,4 +59,4 @@ function clearImages() {
 
 loadImageList();
 addImageButton.onclick = addImage;
-clearImageButton.onclick = clearImages;
+
