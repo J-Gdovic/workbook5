@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <input type="text" id="firstNameInput" value="Ian">
+  </head>
+  <body>
+    <input type="text" id="firstNameInput" value="Ian" />
     <button id="clearButton">Clear</button>
-    <p id="contentParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi perspiciatis fugiat consequuntur laborum exercitationem debitis voluptates eligendi vero voluptatibus consectetur.</p>
+    <p id="contentParagraph">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi perspiciatis fugiat consequuntur laborum
+      exercitationem debitis voluptates eligendi vero voluptatibus consectetur.
+    </p>
+    <img id="myImage" src="" alt="" />
     <script>
-        const firstNameInput = document.getElementById("firstNameInput");
-        const clearButton = document.getElementById("clearButton");
-        const contentParagraph = document.getElementById("contentParagraph");
-        console.log(firstNameInput);
+      const firstNameInput = document.getElementById("firstNameInput");
+      const clearButton = document.getElementById("clearButton");
+      const contentParagraph = document.getElementById("contentParagraph");
+      const myImage = document.getElementById("myImage");
 
+      console.log(firstNameInput);
+      myImage.src =
+        "https://preview.redd.it/if-star-wars-were-to-crossover-with-any-other-media-v0-wp00zlnem23a1.jpg?auto=webp&s=2b956f370bf84c5eda681b8ba4ed719824a0e63e";
+      myImage.alt = "starwars picture";
+      myImage.width = 200;
+      myImage.title = "starwars Image";
 
-function clear() {
-    firstNameInput.value = " ";
-    contentParagraph.innerHTML = " ";
-}
+      function clear() {
+        firstNameInput.value = " ";
+        contentParagraph.innerHTML = " ";
+      }
       clearButton.onclick = clear;
     </script>
-</body>
+  </body>
 </html>
