@@ -60,7 +60,17 @@ let courses = [
 
 // shorten code:
 function isPROG400(course) {
-    return course.CourseId == "PROG400"
+  return course.CourseId == "PROG400";
 }
-let foundCurse = courses.find(isPROG400);
+// let foundCurse = courses.find(isPROG400);
+// console.log(foundCurse);
+
+//arrow function
+
+() => {};
+() => {};
+() => {};
+() => {};
+
+let foundCurse = courses.find((course) => course.CourseId == "PROG400");
 console.log(foundCurse);

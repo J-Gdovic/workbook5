@@ -38,14 +38,18 @@ let courses = [
   },
 ];
 
+//Find many
+//normal function
+// let coursesInClassroom1=[];
 
-//Find many 
-let coursesInClassroom1=[];
+// for (const course of courses) {
+//   if (course.Location == "Classroom 1") {
+//     coursesInClassroom1.push(course);
+//   }
 
-for (const course of courses) {
-  if (course.Location == "Classroom 1") {
-    coursesInClassroom1.push(course);
-  }
-  
-}
+// }
+// console.log(coursesInClassroom1);
+
+//arrow function
+let coursesInClassroom1 = courses.filter((course) => course.Location == "Classroom 1");
 console.log(coursesInClassroom1);
