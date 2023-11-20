@@ -40,11 +40,12 @@ let courses = [
 
 
 //Find many 
+let coursesInClassroom1=[];
 
 for (const course of courses) {
   if (course.Location == "Classroom 1") {
-    console.log(course);
+    coursesInClassroom1.push(course);
   }
   
 }
-
+console.log(coursesInClassroom1);

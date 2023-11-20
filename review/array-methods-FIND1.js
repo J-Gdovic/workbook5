@@ -47,7 +47,12 @@ let courses = [
 
 //Find one course USING .find
 
-function isPROG400() {
-    
+function isPROG400(course) {
+  if (course.CourseId == "PROG400") {
+    return true;
+  }else{
+    return false;
+  }
 }
-courses.find();
+let foundCurse = courses.find(isPROG400);
+console.log(foundCurse);
