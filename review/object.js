@@ -4,3 +4,5 @@ const person ={
 };
 
 console.log(person.lastName);
+
+
