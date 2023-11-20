@@ -264,35 +264,7 @@ function loadEmployeeList() {
   }
 }
 
-// function loadEmployeeData() {
-//   const employeeDataTable = document.querySelector("#employeeDataTable");
-//   employeeDataTableBody.innerHTML = "";
-//   for (const employee of employees) {
-//     let tableRow = employeeDataTableBody.insertRow();
 
-//     let tableData1 = tableRow.insertCell();
-//     tableData1.innerText = employee.id;
-
-//     let tableData2 = tableRow.insertCell();
-//     tableData2.innerText = employee.name;
-
-//     let tableData3 = tableRow.insertCell();
-//     tableData3.innerText = employee.jobTitle;
-
-//     let tableData4 = tableRow.insertCell();
-//     tableData4.innerText = employee.yearsAtCompany;
-
-//     let tableData5 = tableRow.insertCell();
-//     tableData5.innerText = employee.email;
-
-//     let tableData6 = tableRow.insertCell();
-//     tableData6.innerText = employee.wfhAddress;
-
-//     let tableData7 = tableRow.insertCell();
-//     tableData7.innerText = employee.skillSet;
-
-//   }
-// }
 
 function addTableRow() {
   //refreshes table when chosing different employee
@@ -336,6 +308,6 @@ function changeEmployeeInfo() {
 
 //wire up
 loadEmployeeList();
-//loadEmployeeData();
+
 employeeList.onchange = addTableRow;
 
