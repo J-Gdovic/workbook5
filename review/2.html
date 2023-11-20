@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="accountBalanceInput" value="79.99">
+    <script>
+        // let accountBalanceInput = document.getElementById("accountBalanceInput");
+        // console.log(accountBalanceInput.value);
+//or
+        // let accountBalance = document.getElementById("accountBalanceInput").value;
+        // console.log(accountBalance);
+
+      let accountBalanceInput = document.getElementById("accountBalanceInput");
+      let accountBalance = parseInt(accountBalanceInput.value);// Int is short for whole number
+      console.log(typeof accountBalance, accountBalance);
+    </script>
+</body>
+</html>
