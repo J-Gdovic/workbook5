@@ -47,12 +47,20 @@ let courses = [
 
 //Find one course USING .find
 
+//the long version of the code
+// function isPROG400(course) {
+//   if (course.CourseId == "PROG400") {
+//     return true;
+//   }else{
+//     return false;
+//   }
+// }
+// let foundCurse = courses.find(isPROG400);
+// console.log(foundCurse);
+
+// shorten code:
 function isPROG400(course) {
-  if (course.CourseId == "PROG400") {
-    return true;
-  }else{
-    return false;
-  }
+    return course.CourseId == "PROG400"
 }
 let foundCurse = courses.find(isPROG400);
 console.log(foundCurse);
