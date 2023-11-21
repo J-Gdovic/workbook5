@@ -44,6 +44,6 @@ let courses = [
 // console.log(course);
 
 //arrow function shortest form of function "cleanest form"
-const course = courses.find((course) => course.CourseId == "PROG100");
+const course = courses.find(c => c.CourseId == "PROG100");
 
 console.log(course);
