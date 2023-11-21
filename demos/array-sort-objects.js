@@ -16,5 +16,5 @@ console.log(products);
 
 //sort by price
 console.log("sorted by price ascending order:");
-products.sort((productA,productB)=> productA.price - productB.price);
+products.sort((productA, productB) => productA.price - productB.price);
 console.log(products);
