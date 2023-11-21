@@ -37,14 +37,6 @@ let courses = [
     Fee: "50.00",
   },
 ];
-//shorter version of function
-// const course = courses.find((course) => {
-// return course.CourseId == "PROG100";
-// });
 
-// console.log(course);
-
-//arrow function shortest form of function "cleanest form"
-const course = courses.find(c => c.CourseId == "PROG100");
-
-console.log(course);
+const coursesInClassroom1 = courses.filter((coursesInClassroom1) => coursesInClassroom1.Location == "Classroom 1");
+console.log(coursesInClassroom1);
