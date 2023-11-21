@@ -17,7 +17,13 @@ console.log(products);
 console.log("-------------------------------");
 
 //sort by price descending
-
 products.sort((productA, productB) => productB.price - productA.price);
+// console.log(products);
+products.forEach((product) => console.log(product.price));
+
+console.log("-------------------------------");
+
+//sort by price ascending
+products.sort((productA, productB) => productA.price - productB.price);
 // console.log(products);
 products.forEach((product) => console.log(product.price));
