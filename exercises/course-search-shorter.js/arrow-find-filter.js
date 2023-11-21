@@ -48,6 +48,8 @@ const courseStart = courses.find((courseDate) => courseDate.CourseId == "PROG200
 
 console.log(courseStart.StartDate);
 
+console.log();
+
 console.log("What is the title of the PROJ500 course?");
 // for (const course of courses) {
 //   if (course.CourseId == "PROJ500") {
@@ -57,14 +59,18 @@ console.log("What is the title of the PROJ500 course?");
 const courseTitle = courses.find((titleOfcourse) => titleOfcourse.CourseId == "PROJ500");
 console.log(courseTitle.Title);
 
+console.log();
+
 console.log("What are the titles of the courses that cost $50 or less?");
 // for (const course of courses) {
 //   if (Number(course.Fee) <= 50) {
 //     console.log(course.Title);
 //   }
 // }
-const courseTitles = courses.filter(costOfCourse => (costOfCourse.Fee) <= 50);
+const courseTitles = courses.filter(costOfCourse => Number(costOfCourse.Fee) <= 50);
 courseTitles.forEach(costOfCourse => console.log(costOfCourse.Title));
+
+console.log();
 
 console.log('What classes meet in "Classroom 1"?');
 // for (const course of courses) {
