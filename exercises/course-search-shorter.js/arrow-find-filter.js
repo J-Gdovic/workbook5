@@ -44,7 +44,7 @@ console.log("When does the PROG200 course start?");
 //     console.log(course.StartDate);
 //   }
 // }
-const courseStart = courses.find((courseStart) => courseStart.CourseId == "PROG200");
+const courseStart = courses.find((courseDate) => courseDate.CourseId == "PROG200");
 
 console.log(courseStart.StartDate);
 
@@ -54,7 +54,7 @@ console.log("What is the title of the PROJ500 course?");
 //     console.log(course.Title);
 //   }
 // }
-const courseTitle = courses.find((courseTitle) => courseTitle.CourseId == "PROJ500");
+const courseTitle = courses.find((titleOfcourse) => titleOfcourse.CourseId == "PROJ500");
 console.log(courseTitle.Title);
 
 console.log("What are the titles of the courses that cost $50 or less?");
