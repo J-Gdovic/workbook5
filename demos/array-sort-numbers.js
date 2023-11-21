@@ -10,8 +10,12 @@ let numbers = [100, 20, 55, 67, 11, 2, 88];
 // console.log(numbers);
 
 //shorter version
-function compare(a,b) {
-return a-b;
-}
-numbers.sort(compare);
+// function compare(a,b) {
+// return a-b;
+// }
+// numbers.sort(compare);
+// console.log(numbers);
+
+//shortest version
+let number = numbers.sort((a, b) => a - b);
 console.log(numbers);
