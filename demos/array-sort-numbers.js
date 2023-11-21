@@ -16,6 +16,6 @@ let numbers = [100, 20, 55, 67, 11, 2, 88];
 // numbers.sort(compare);
 // console.log(numbers);
 
-//shortest version
-let number = numbers.sort((a, b) => a - b);
+//shortest version ....dont need : let number = before function
+numbers.sort((a, b) => a - b);
 console.log(numbers);
