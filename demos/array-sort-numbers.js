@@ -17,5 +17,10 @@ let numbers = [100, 20, 55, 67, 11, 2, 88];
 // console.log(numbers);
 
 //shortest version ....dont need : let number = before function
+//ascending order
 numbers.sort((a, b) => a - b);
+console.log(numbers);
+
+//descending order
+numbers.sort((a,b) => b-a);
 console.log(numbers);
