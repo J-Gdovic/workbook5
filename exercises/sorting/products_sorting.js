@@ -12,7 +12,8 @@ products.sort((productA, productB) => {
   else if (productA.name == productB.name) return 0;
   else return 1;
 });
-console.log(products);
+// console.log(products);
+products.forEach((product) => console.log(product.name));
 
 console.log("-------------------------------");
 
