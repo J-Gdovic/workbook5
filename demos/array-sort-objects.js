@@ -5,6 +5,7 @@ let products = [
 ];
 
 // sort products by name alphabetically
+// This is shortest way to sort alphabetically -- you need if, else if, else
 console.log("sorted by name alphabetically:");
 products.sort((productA, productB) => {
   if (productA.name < productB.name) return -1;
