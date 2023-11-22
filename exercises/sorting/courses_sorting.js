@@ -44,3 +44,8 @@ courses.sort((courseA, courseB) => {
   else return 1;
 });
 courses.forEach((course) => console.log(course.Title));
+
+console.log("-----------------------------------");
+
+courses.sort((courseA,courseB)=> courseA.Fee -courseB.Fee);
+courses.forEach((course)=>console.log(course.Fee));
